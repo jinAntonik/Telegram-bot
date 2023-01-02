@@ -1,2 +1,2 @@
 # Telegram-bot
-Advanced bot for private chats with users in Telegram
+Advanced chat-bot for private chats with users in Telegram
