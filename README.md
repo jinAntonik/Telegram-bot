@@ -1,5 +1,5 @@
 # Telegram-bot
-Advanced chat-bot for private chats with users in Telegram
+Advanced chat-bot for private chats with users in Telegram, written with aiogram.2
 
 Bot was created for support of clients of online shop of services. Client should use special buttons to make the order. For this purpose bot is written with asynchronous code.
 
