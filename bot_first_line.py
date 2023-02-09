@@ -7,18 +7,18 @@ import os
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.filters import Command, Text
 
-# from aiogram.dispatcher.filters import Command, Text
 from aiogram.types import InputFile, MediaGroup
 from aiogram.utils.markdown import hbold, hitalic, hlink, text
 from config import TOKEN, admin_id, new_csv_file, users
 from emoji import emojize
 
+
 my_path = f"{os.getcwd()}\\telegram_bot_aiogram3"
 confirm_dict = {}  # dict for all users
 id_set = set()  # obtained id for .txt file
 
+
 # ! DO NOT open .csv using Excel while running (allowed in VS Code)
-# new run -> new file(empty)
 if new_csv_file:
     new_name_file = rf'{my_path}\telegram_data_{str(dt.datetime.now().time())[0:8].replace(":", "+")}.csv'
     with open(new_name_file, "w", newline="") as fp:
@@ -70,101 +70,6 @@ bot = Bot(token=token_first_bot, parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot)
 
 
-# commands = {
-#     "about us": {
-#         "button_text": "Î íàñ",
-#         "msg_after_clicking": "Ìû êîìàíäà èíèöèàòèâíûõ ñòàðòàïåðîâ!",
-#     },
-#     # "bot": {
-#     #
-#     # },
-#     "support": {
-#         "button_text": "Ïîääåðæêà",
-#         "msg_after_clicking": "×òîáû ïîëó÷èòü ïîìîùü, ïåðåéäèòå ïî",
-#     },
-#     "services": {
-#         "button_text": "Óñëóãè",
-#         "msg_after_clicking": "Íàøè óñëóãè íîñÿò ðàçíîîáðàçíûé õàðàêòåð",
-#     },
-#     "refund": {
-#         "button_text": "Âîçâðàò",
-#         "msg_after_clicking": "×òîáû âåðíóòü òîâàð, ïðèõîäèòå íà óãîë óëèöû Ïóøêèíà, äîì Êîëîòóøêèíà",
-#     },
-#     "buying": {
-#         "button_text": "Êóïèòü",
-#         "msg_after_clicking": "Âûáåðèòå ïðîäóêò",
-#         "leads_to": {
-#             "1 product": {
-#                 "button_text": "Ïåðâûé ïðîäóêò",
-#                 "msg_after_clicking": "Âûáåðèòå ëîêàöèþ",
-#                 "leads_to": {
-#                     "1 location": {
-#                         "button_text": "Ñàíêò-Ïåòåðáóðã, óë.Ñòðîèòåëåé, ä.28",
-#                         "msg_after_clicking": "Âûáåðèòå òèï",
-#                         "leads_to": {
-#                             "1 type": {
-#                                 "button_text": "Òèï ¹1",
-#                                 "msg_after_clicking": "Âñ¸ âåðíî?",  # * âûäàâàòü ñîîáùåíèå èç çàïîëíåííîé èíôû
-#                                 "leads_to": {
-#                                     "summary": {
-#                                         "confirm": {
-#                                             "button_text": "Äà",
-#                                             "msg_after_clicking": "Âûáåðèòå ñïîñîá îïëàòû",
-#                                             "leads_to": {
-#                                                 "way_to_pay": {
-#                                                     "1 way": {
-#                                                         "button_text": "Ïåðåâîä ïî êàðòå",
-#                                                         "msg_after_clicking": "À ÷òî äàëüøå õç",
-#                                                     },
-#                                                     "2 way": {
-#                                                         "button_text": "×åðåç áèòêîèíû",
-#                                                         "msg_after_clicking": "À ÷òî äàëüøå õç 2",
-#                                                     },
-#                                                 }
-#                                             },
-#                                         },
-#                                         "refuse": {
-#                                             "button_text": "Íåò",
-#                                             "msg_after_clicking": "Âû âåðíóëèñü â ìåíþ",
-#                                             "leads_to": {},  # to "buying" branch
-#                                         },
-#                                     }
-#                                 },
-#                             },
-#                             "2 type": {
-#                                 "button_text": "Òèï ¹2",
-#                                 # "msg_after_clicking": {}  # same as for 1 type
-#                                 # "leads_to": {}  # same as for 1 type
-#                             },
-#                         },
-#                     },
-#                     "2 location": {
-#                         "button_text": "Ìîñêâà, ïë.Ìèðà, ä.1",
-#                         # "leads_to":{}  # same as for 1 location
-#                     },
-#                     "3 location": {
-#                         "button_text": "Ðÿçàíü, ïð.Ëåíèíà, 76",
-#                         # "leads_to":{}  # same as for 1 location
-#                     },
-#                 },
-#             },
-#             "2 product": {
-#                 "button_text": "Âòîðîé ïðîäóêò"
-#             },  # same as for 1 product
-#             "3 product": {
-#                 "button_text": "Òðåòèé ïðîäóêò"
-#             },  # same as for 1 product
-#         },
-#     },
-#     "menu": {
-#         "button_text": "Â ìåíþ",
-#         "msg_after_clicking": "Âû âåðíóëèñü â ìåíþ",
-#     },
-# }
-
-# # saving json
-# with open(rf"{my_path}\commands_dict.json", "w") as fp:
-#     json.dump(commands, fp, indent=4, sort_keys=True, ensure_ascii=False)
 
 # loading json
 with open(rf"{my_path}\commands_dict.json") as f:
@@ -192,19 +97,19 @@ async def start(message: types.Message):
     # input_field_placeholder is visible on PC (in the background of input line)
     keyboard = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        input_field_placeholder="Âûáåðèòå äåéñòâèå",
+        input_field_placeholder="Choose action",
     )
     keyboard.add(*start_buttons)
 
     msg = text(
-        hbold("Çäðàâñòâóéòå!"),
-        'Ðàäû ïðèâåòñòâîâàòü âàñ â íàøåì ñåðâèñå "Êðóòîé áîò".',
-        "\nÄîñòóïíûå êîìàíäû:",
-        "/start - íà÷àòü ðàáîòó ñ áîòîì",
-        "/support - ïîëó÷èòü ïîìîùü",
-        "/photo - *çàðÿäèòüñÿ ýíåðãèåé",
-        "/album - *çàðÿäèòüñÿ ýíåðãèåé 2x",
-        "\nÊîíòàêòû:",
+        hbold("Welcome!"),
+        'This is our online service "Brainy bot".',
+        "\nAvailable commands:",
+        "/start - start interaction with bot",
+        "/support - get support",
+        "/photo - *become happy",
+        "/album - *become happy x2",
+        "\Contacts:",
         "8(800)555-35-35",
         sep="\n",
     )
@@ -272,7 +177,7 @@ async def first_but(message: types.Message):
         commands["menu"]["button_text"],
     ]
     keyboard = types.ReplyKeyboardMarkup(
-        resize_keyboard=True, input_field_placeholder="Âûáåðèòå ïðîäóêò"
+        resize_keyboard=True, input_field_placeholder="Choose a product"
     )
     keyboard.row(*buttons)  # buttons in one line
 
@@ -326,7 +231,7 @@ async def first_prod(message: types.Message):
     keyboard = types.ReplyKeyboardMarkup(
         keyboard=buttons,
         resize_keyboard=True,
-        input_field_placeholder="Âûáåðèòå ëîêàöèþ",
+        input_field_placeholder="Choose location",
     )
 
     await message.answer(
@@ -369,7 +274,7 @@ async def first_but(message: types.Message):
         commands["menu"]["button_text"],
     ]
     keyboard = types.ReplyKeyboardMarkup(
-        resize_keyboard=True, input_field_placeholder="Âûáåðèòå òèï"
+        resize_keyboard=True, input_field_placeholder="Choose type"
     )
     keyboard.add(*buttons)
 
@@ -418,7 +323,7 @@ async def first_but(message: types.Message):
     ]
     keyboard = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        input_field_placeholder="Ïîäòâåðäèòå çàêàç",
+        input_field_placeholder="Confirm the order",
     )
     keyboard.add(*buttons)
 
@@ -473,7 +378,7 @@ async def first_but(message: types.Message):
     ]
     keyboard = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        input_field_placeholder="Âûáåðèòå ñïîñîá îïëàòû",
+        input_field_placeholder="Choose a payment method",
         one_time_keyboard=True,
     )
     keyboard.add(*buttons)
@@ -514,7 +419,7 @@ async def first_but(message: types.Message):
     ]
     keyboard = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        input_field_placeholder="Âûáåðèòå äåéñòâèå",
+        input_field_placeholder="Choose action",
     )
     keyboard.add(*start_buttons)
 
@@ -556,10 +461,10 @@ async def first_but(message: types.Message):
 )
 async def first_but(message: types.Message):
     msg = text(
-        "Äëÿ îïëàòû ïåðåõîäèòå â íàø",
+        "To perform a purchase visit our",
         hlink(
-            title="÷àò-áîò ñîïðîâîæäåíèÿ",
-            url="http://t.me/danya_support_bot",
+            title="chat bot with support",
+            url="http://t.me/********",
         ),
     )
     await message.answer(msg)
@@ -571,7 +476,7 @@ async def first_but(message: types.Message):
 # back to menu
 @dp.message_handler(
     Text(equals=commands["menu"]["button_text"])
-)  #! ñäåëàòü ìíîãî âîçâðàòîâ â ìåíþ equals=ñïèñîê
+)
 async def first_but(message: types.Message):
     start_buttons = [
         commands["about us"]["button_text"],
@@ -597,7 +502,7 @@ async def send_photo(message: types.Message):
     photo_bytes = InputFile(path_or_bytesio=rf"{my_path}\picture_1.jpg")
 
     await dp.bot.send_photo(
-        chat_id=chat_id, photo=photo_bytes, caption=text(emojize("Äåðæè! :fire:"))
+        chat_id=chat_id, photo=photo_bytes, caption=text(emojize("Take! :fire:"))
     )
     await save_info(message)
 
@@ -615,7 +520,7 @@ async def send_album(message: types.Message):
     # one caption for whole album
     our_album.attach_photo(
         photo=photo_bytes_1,
-        caption=text(emojize("Êàêèå îíè... :broken_heart:")),
+        caption=text(emojize("Take more! :broken_heart:")),
     )
     our_album.attach_photo(photo=photo_bytes_2)
 
@@ -634,11 +539,11 @@ async def start_mailing(message: types.Message):
             await bot.send_message(user, message.text[message.text.find(" ") + 1 :])
             # write: "/mailing <text>". Space is necessary!
         await message.answer(
-            "Ìèëîðä, ðàññûëêà ïðîøëà óñïåøíî"
+            "Mailing was successful"
         )
         await save_info(message)
     else:  # block not-admins and save info
-        await message.answer(f'Êîìàíäà "{message.text}" íå íàéäåíà')
+        await message.answer(f'Command "{message.text}" is not found')
         await save_info(message)
 
 
@@ -656,12 +561,12 @@ async def start_mailing(message: types.Message):
         await bot.send_message(id, text_to_send)
         # write: "/personal <user_id> <text>". Spaces are necessary!
         await message.answer(
-            f'Âû îòïðàâèëè ñîîáùåíèå "{text_to_send}" ïîëüçîâàòåëþ {id}'
+            f'You've sent message "{text_to_send}" to user {id}'
         )
         await save_info(message)
 
     else:  # block not-admins and save info
-        await message.answer(f'Êîìàíäà "{message.text}" íå íàéäåíà')
+        await message.answer(f'Command "{message.text}" is not found')
         await save_info(message)
 
 
@@ -671,7 +576,7 @@ async def start_mailing(message: types.Message):
 @dp.message_handler()
 async def command_error(message: types.Message):
 
-    await message.answer(f'Êîìàíäà "{message.text}" íå íàéäåíà')
+    await message.answer(f'Command "{message.text}" is not found')
     await save_info(message)
 
 
@@ -729,7 +634,7 @@ async def save_file(message: types.Message):
 @dp.message_handler(content_types=[types.ContentType.VOICE])
 async def save_photo(message: types.Message):
     await message.answer(
-        "Îïåðàòîð íå ìîæåò ïðîñëóøàòü âàøå ñîîáùåíèå. Íàïèøèòå, ïîæàëóéñòà, òåêñòîì"
+        "Manager cannot listen to your voice message. Please, send us text messages"
     )
 
 
@@ -739,7 +644,7 @@ async def save_photo(message: types.Message):
 @dp.message_handler(content_types=[types.ContentType.VIDEO])
 async def save_photo(message: types.Message):
     await message.answer(
-        "Îïåðàòîð íå ìîæåò ïîñìîòðåòü âàøå âèäåî. Ïðèøëèòå, ïîæàëóéñòà, ôîòî"
+        "Manager cannot watch your video. Please, send us text messages"
     )
 
 
@@ -749,7 +654,7 @@ async def save_photo(message: types.Message):
 @dp.message_handler(content_types=[types.ContentType.STICKER])
 async def save_photo(message: types.Message):
     await message.answer(
-        "Áîò ïëîõî âîñïðèíèìàåò èíôîðìàöèþ ÷åðåç ñòèêåðû. Íàïèøèòå, ïîæàëóéñòà, òåêñòîì"
+        "Manager cannot see your sticker. Please, send us text messages"
     )
 
 
