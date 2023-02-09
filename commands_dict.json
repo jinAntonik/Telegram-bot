@@ -1,0 +1,84 @@
+{
+    "about us": {
+        "button_text": "О нас",
+        "msg_after_clicking": "Мы команда инициативных стартаперов!"
+    },
+    "buying": {
+        "button_text": "Купить",
+        "leads_to": {
+            "1 product": {
+                "button_text": "Первый продукт",
+                "leads_to": {
+                    "1 location": {
+                        "button_text": "Санкт-Петербург, ул.Строителей, д.28",
+                        "leads_to": {
+                            "1 type": {
+                                "button_text": "Тип №1",
+                                "leads_to": {
+                                    "summary": {
+                                        "confirm": {
+                                            "button_text": "Да",
+                                            "leads_to": {
+                                                "way_to_pay": {
+                                                    "1 way": {
+                                                        "button_text": "Перевод по карте",
+                                                        "msg_after_clicking": "А что дальше хз"
+                                                    },
+                                                    "2 way": {
+                                                        "button_text": "Через биткоины",
+                                                        "msg_after_clicking": "А что дальше хз 2"
+                                                    }
+                                                }
+                                            },
+                                            "msg_after_clicking": "Выберите способ оплаты"
+                                        },
+                                        "refuse": {
+                                            "button_text": "Нет",
+                                            "leads_to": {},
+                                            "msg_after_clicking": "Вы вернулись в меню"
+                                        }
+                                    }
+                                },
+                                "msg_after_clicking": "Всё верно?"
+                            },
+                            "2 type": {
+                                "button_text": "Тип №2"
+                            }
+                        },
+                        "msg_after_clicking": "Выберите тип"
+                    },
+                    "2 location": {
+                        "button_text": "Москва, пл.Мира, д.1"
+                    },
+                    "3 location": {
+                        "button_text": "Рязань, пр.Ленина, 76"
+                    }
+                },
+                "msg_after_clicking": "Выберите локацию"
+            },
+            "2 product": {
+                "button_text": "Второй продукт"
+            },
+            "3 product": {
+                "button_text": "Третий продукт"
+            }
+        },
+        "msg_after_clicking": "Выберите продукт"
+    },
+    "menu": {
+        "button_text": "В меню",
+        "msg_after_clicking": "Вы вернулись в меню"
+    },
+    "refund": {
+        "button_text": "Возврат",
+        "msg_after_clicking": "Чтобы вернуть товар, приходите на угол улицы Пушкина, дом Колотушкина"
+    },
+    "services": {
+        "button_text": "Услуги",
+        "msg_after_clicking": "Наши услуги носят разнообразный характер"
+    },
+    "support": {
+        "button_text": "Поддержка",
+        "msg_after_clicking": "Чтобы получить помощь, перейдите по"
+    }
+}
