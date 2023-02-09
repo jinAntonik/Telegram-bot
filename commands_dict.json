@@ -1,84 +1,84 @@
 {
     "about us": {
-        "button_text": "О нас",
-        "msg_after_clicking": "Мы команда инициативных стартаперов!"
+        "button_text": "About us",
+        "msg_after_clicking": "Our team is ..."
     },
     "buying": {
-        "button_text": "Купить",
+        "button_text": "Purhase",
         "leads_to": {
             "1 product": {
-                "button_text": "Первый продукт",
+                "button_text": "First product",
                 "leads_to": {
                     "1 location": {
-                        "button_text": "Санкт-Петербург, ул.Строителей, д.28",
+                        "button_text": "Sity #1, Street, Building",
                         "leads_to": {
                             "1 type": {
-                                "button_text": "Тип №1",
+                                "button_text": "Type #1",
                                 "leads_to": {
                                     "summary": {
                                         "confirm": {
-                                            "button_text": "Да",
+                                            "button_text": "Yes",
                                             "leads_to": {
                                                 "way_to_pay": {
                                                     "1 way": {
-                                                        "button_text": "Перевод по карте",
-                                                        "msg_after_clicking": "А что дальше хз"
+                                                        "button_text": "By bank transaction",
+                                                        "msg_after_clicking": "..."
                                                     },
                                                     "2 way": {
-                                                        "button_text": "Через биткоины",
-                                                        "msg_after_clicking": "А что дальше хз 2"
+                                                        "button_text": "By cryptocurrency",
+                                                        "msg_after_clicking": "..."
                                                     }
                                                 }
                                             },
-                                            "msg_after_clicking": "Выберите способ оплаты"
+                                            "msg_after_clicking": "Choose payment method"
                                         },
                                         "refuse": {
-                                            "button_text": "Нет",
+                                            "button_text": "No",
                                             "leads_to": {},
-                                            "msg_after_clicking": "Вы вернулись в меню"
+                                            "msg_after_clicking": "You came back to menu"
                                         }
                                     }
                                 },
-                                "msg_after_clicking": "Всё верно?"
+                                "msg_after_clicking": "Is everything correct?"
                             },
                             "2 type": {
-                                "button_text": "Тип №2"
+                                "button_text": "Type #2"
                             }
                         },
-                        "msg_after_clicking": "Выберите тип"
+                        "msg_after_clicking": "Choose type"
                     },
                     "2 location": {
-                        "button_text": "Москва, пл.Мира, д.1"
+                        "button_text": "Sity #2, Street, Building"
                     },
                     "3 location": {
-                        "button_text": "Рязань, пр.Ленина, 76"
+                        "button_text": "Sity #3, Street, Building"
                     }
                 },
-                "msg_after_clicking": "Выберите локацию"
+                "msg_after_clicking": "Choose location"
             },
             "2 product": {
-                "button_text": "Второй продукт"
+                "button_text": "Second product"
             },
             "3 product": {
-                "button_text": "Третий продукт"
+                "button_text": "Third product"
             }
         },
-        "msg_after_clicking": "Выберите продукт"
+        "msg_after_clicking": "Choose product"
     },
     "menu": {
-        "button_text": "В меню",
-        "msg_after_clicking": "Вы вернулись в меню"
+        "button_text": "Bact to menu",
+        "msg_after_clicking": "You came back to menu"
     },
     "refund": {
-        "button_text": "Возврат",
-        "msg_after_clicking": "Чтобы вернуть товар, приходите на угол улицы Пушкина, дом Колотушкина"
+        "button_text": "Refund",
+        "msg_after_clicking": "..."
     },
     "services": {
-        "button_text": "Услуги",
-        "msg_after_clicking": "Наши услуги носят разнообразный характер"
+        "button_text": "Services",
+        "msg_after_clicking": "..."
     },
     "support": {
-        "button_text": "Поддержка",
-        "msg_after_clicking": "Чтобы получить помощь, перейдите по"
+        "button_text": "Support",
+        "msg_after_clicking": "..."
     }
 }
