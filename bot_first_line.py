@@ -72,93 +72,93 @@ dp = Dispatcher(bot)
 
 # commands = {
 #     "about us": {
-#         "button_text": "О нас",
-#         "msg_after_clicking": "Мы команда инициативных стартаперов!",
+#         "button_text": "ГЋ Г­Г Г±",
+#         "msg_after_clicking": "ГЊГ» ГЄГ®Г¬Г Г­Г¤Г  ГЁГ­ГЁГ¶ГЁГ ГІГЁГўГ­Г»Гµ Г±ГІГ Г°ГІГ ГЇГҐГ°Г®Гў!",
 #     },
 #     # "bot": {
 #     #
 #     # },
 #     "support": {
-#         "button_text": "Поддержка",
-#         "msg_after_clicking": "Чтобы получить помощь, перейдите по",
+#         "button_text": "ГЏГ®Г¤Г¤ГҐГ°Г¦ГЄГ ",
+#         "msg_after_clicking": "Г—ГІГ®ГЎГ» ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ®Г¬Г®Г№Гј, ГЇГҐГ°ГҐГ©Г¤ГЁГІГҐ ГЇГ®",
 #     },
 #     "services": {
-#         "button_text": "Услуги",
-#         "msg_after_clicking": "Наши услуги носят разнообразный характер",
+#         "button_text": "Г“Г±Г«ГіГЈГЁ",
+#         "msg_after_clicking": "ГЌГ ГёГЁ ГіГ±Г«ГіГЈГЁ Г­Г®Г±ГїГІ Г°Г Г§Г­Г®Г®ГЎГ°Г Г§Г­Г»Г© ГµГ Г°Г ГЄГІГҐГ°",
 #     },
 #     "refund": {
-#         "button_text": "Возврат",
-#         "msg_after_clicking": "Чтобы вернуть товар, приходите на угол улицы Пушкина, дом Колотушкина",
+#         "button_text": "Г‚Г®Г§ГўГ°Г ГІ",
+#         "msg_after_clicking": "Г—ГІГ®ГЎГ» ГўГҐГ°Г­ГіГІГј ГІГ®ГўГ Г°, ГЇГ°ГЁГµГ®Г¤ГЁГІГҐ Г­Г  ГіГЈГ®Г« ГіГ«ГЁГ¶Г» ГЏГіГёГЄГЁГ­Г , Г¤Г®Г¬ ГЉГ®Г«Г®ГІГіГёГЄГЁГ­Г ",
 #     },
 #     "buying": {
-#         "button_text": "Купить",
-#         "msg_after_clicking": "Выберите продукт",
+#         "button_text": "ГЉГіГЇГЁГІГј",
+#         "msg_after_clicking": "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГЇГ°Г®Г¤ГіГЄГІ",
 #         "leads_to": {
 #             "1 product": {
-#                 "button_text": "Первый продукт",
-#                 "msg_after_clicking": "Выберите локацию",
+#                 "button_text": "ГЏГҐГ°ГўГ»Г© ГЇГ°Г®Г¤ГіГЄГІ",
+#                 "msg_after_clicking": "Г‚Г»ГЎГҐГ°ГЁГІГҐ Г«Г®ГЄГ Г¶ГЁГѕ",
 #                 "leads_to": {
 #                     "1 location": {
-#                         "button_text": "Санкт-Петербург, ул.Строителей, д.28",
-#                         "msg_after_clicking": "Выберите тип",
+#                         "button_text": "Г‘Г Г­ГЄГІ-ГЏГҐГІГҐГ°ГЎГіГ°ГЈ, ГіГ«.Г‘ГІГ°Г®ГЁГІГҐГ«ГҐГ©, Г¤.28",
+#                         "msg_after_clicking": "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГІГЁГЇ",
 #                         "leads_to": {
 #                             "1 type": {
-#                                 "button_text": "Тип №1",
-#                                 "msg_after_clicking": "Всё верно?",  # * выдавать сообщение из заполненной инфы
+#                                 "button_text": "Г’ГЁГЇ В№1",
+#                                 "msg_after_clicking": "Г‚Г±Вё ГўГҐГ°Г­Г®?",  # * ГўГ»Г¤Г ГўГ ГІГј Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЁГ§ Г§Г ГЇГ®Г«Г­ГҐГ­Г­Г®Г© ГЁГ­ГґГ»
 #                                 "leads_to": {
 #                                     "summary": {
 #                                         "confirm": {
-#                                             "button_text": "Да",
-#                                             "msg_after_clicking": "Выберите способ оплаты",
+#                                             "button_text": "Г„Г ",
+#                                             "msg_after_clicking": "Г‚Г»ГЎГҐГ°ГЁГІГҐ Г±ГЇГ®Г±Г®ГЎ Г®ГЇГ«Г ГІГ»",
 #                                             "leads_to": {
 #                                                 "way_to_pay": {
 #                                                     "1 way": {
-#                                                         "button_text": "Перевод по карте",
-#                                                         "msg_after_clicking": "А что дальше хз",
+#                                                         "button_text": "ГЏГҐГ°ГҐГўГ®Г¤ ГЇГ® ГЄГ Г°ГІГҐ",
+#                                                         "msg_after_clicking": "ГЂ Г·ГІГ® Г¤Г Г«ГјГёГҐ ГµГ§",
 #                                                     },
 #                                                     "2 way": {
-#                                                         "button_text": "Через биткоины",
-#                                                         "msg_after_clicking": "А что дальше хз 2",
+#                                                         "button_text": "Г—ГҐГ°ГҐГ§ ГЎГЁГІГЄГ®ГЁГ­Г»",
+#                                                         "msg_after_clicking": "ГЂ Г·ГІГ® Г¤Г Г«ГјГёГҐ ГµГ§ 2",
 #                                                     },
 #                                                 }
 #                                             },
 #                                         },
 #                                         "refuse": {
-#                                             "button_text": "Нет",
-#                                             "msg_after_clicking": "Вы вернулись в меню",
+#                                             "button_text": "ГЌГҐГІ",
+#                                             "msg_after_clicking": "Г‚Г» ГўГҐГ°Г­ГіГ«ГЁГ±Гј Гў Г¬ГҐГ­Гѕ",
 #                                             "leads_to": {},  # to "buying" branch
 #                                         },
 #                                     }
 #                                 },
 #                             },
 #                             "2 type": {
-#                                 "button_text": "Тип №2",
+#                                 "button_text": "Г’ГЁГЇ В№2",
 #                                 # "msg_after_clicking": {}  # same as for 1 type
 #                                 # "leads_to": {}  # same as for 1 type
 #                             },
 #                         },
 #                     },
 #                     "2 location": {
-#                         "button_text": "Москва, пл.Мира, д.1",
+#                         "button_text": "ГЊГ®Г±ГЄГўГ , ГЇГ«.ГЊГЁГ°Г , Г¤.1",
 #                         # "leads_to":{}  # same as for 1 location
 #                     },
 #                     "3 location": {
-#                         "button_text": "Рязань, пр.Ленина, 76",
+#                         "button_text": "ГђГїГ§Г Г­Гј, ГЇГ°.Г‹ГҐГ­ГЁГ­Г , 76",
 #                         # "leads_to":{}  # same as for 1 location
 #                     },
 #                 },
 #             },
 #             "2 product": {
-#                 "button_text": "Второй продукт"
+#                 "button_text": "Г‚ГІГ®Г°Г®Г© ГЇГ°Г®Г¤ГіГЄГІ"
 #             },  # same as for 1 product
 #             "3 product": {
-#                 "button_text": "Третий продукт"
+#                 "button_text": "Г’Г°ГҐГІГЁГ© ГЇГ°Г®Г¤ГіГЄГІ"
 #             },  # same as for 1 product
 #         },
 #     },
 #     "menu": {
-#         "button_text": "В меню",
-#         "msg_after_clicking": "Вы вернулись в меню",
+#         "button_text": "Г‚ Г¬ГҐГ­Гѕ",
+#         "msg_after_clicking": "Г‚Г» ГўГҐГ°Г­ГіГ«ГЁГ±Гј Гў Г¬ГҐГ­Гѕ",
 #     },
 # }
 
@@ -192,19 +192,19 @@ async def start(message: types.Message):
     # input_field_placeholder is visible on PC (in the background of input line)
     keyboard = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        input_field_placeholder="Выберите действие",
+        input_field_placeholder="Г‚Г»ГЎГҐГ°ГЁГІГҐ Г¤ГҐГ©Г±ГІГўГЁГҐ",
     )
     keyboard.add(*start_buttons)
 
     msg = text(
-        hbold("Здравствуйте!"),
-        'Рады приветствовать вас в нашем сервисе "Крутой бот".',
-        "\nДоступные команды:",
-        "/start - начать работу с ботом",
-        "/support - получить помощь",
-        "/photo - *зарядиться энергией",
-        "/album - *зарядиться энергией 2x",
-        "\nКонтакты:",
+        hbold("Г‡Г¤Г°Г ГўГ±ГІГўГіГ©ГІГҐ!"),
+        'ГђГ Г¤Г» ГЇГ°ГЁГўГҐГІГ±ГІГўГ®ГўГ ГІГј ГўГ Г± Гў Г­Г ГёГҐГ¬ Г±ГҐГ°ГўГЁГ±ГҐ "ГЉГ°ГіГІГ®Г© ГЎГ®ГІ".',
+        "\nГ„Г®Г±ГІГіГЇГ­Г»ГҐ ГЄГ®Г¬Г Г­Г¤Г»:",
+        "/start - Г­Г Г·Г ГІГј Г°Г ГЎГ®ГІГі Г± ГЎГ®ГІГ®Г¬",
+        "/support - ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ®Г¬Г®Г№Гј",
+        "/photo - *Г§Г Г°ГїГ¤ГЁГІГјГ±Гї ГЅГ­ГҐГ°ГЈГЁГҐГ©",
+        "/album - *Г§Г Г°ГїГ¤ГЁГІГјГ±Гї ГЅГ­ГҐГ°ГЈГЁГҐГ© 2x",
+        "\nГЉГ®Г­ГІГ ГЄГІГ»:",
         "8(800)555-35-35",
         sep="\n",
     )
@@ -231,7 +231,7 @@ async def start(message: types.Message):
     msg = text(
         commands["support"]["msg_after_clicking"],
         hlink(
-            title="ссылке",
+            title="Г±Г±Г»Г«ГЄГҐ",
             url="http://t.me/danya_support_bot",
         ),
     )
@@ -272,7 +272,7 @@ async def first_but(message: types.Message):
         commands["menu"]["button_text"],
     ]
     keyboard = types.ReplyKeyboardMarkup(
-        resize_keyboard=True, input_field_placeholder="Выберите продукт"
+        resize_keyboard=True, input_field_placeholder="Г‚Г»ГЎГҐГ°ГЁГІГҐ ГЇГ°Г®Г¤ГіГЄГІ"
     )
     keyboard.row(*buttons)  # buttons in one line
 
@@ -326,7 +326,7 @@ async def first_prod(message: types.Message):
     keyboard = types.ReplyKeyboardMarkup(
         keyboard=buttons,
         resize_keyboard=True,
-        input_field_placeholder="Выберите локацию",
+        input_field_placeholder="Г‚Г»ГЎГҐГ°ГЁГІГҐ Г«Г®ГЄГ Г¶ГЁГѕ",
     )
 
     await message.answer(
@@ -369,13 +369,13 @@ async def first_but(message: types.Message):
         commands["menu"]["button_text"],
     ]
     keyboard = types.ReplyKeyboardMarkup(
-        resize_keyboard=True, input_field_placeholder="Выберите тип"
+        resize_keyboard=True, input_field_placeholder="Г‚Г»ГЎГҐГ°ГЁГІГҐ ГІГЁГЇ"
     )
     keyboard.add(*buttons)
 
     # msg = text(
     #     commands["1 product"]["leads_to"]["buy"]["msg_after_clicking"],
-    #     hlink(title="ссылке", url="http://t.me/danya_support_bot"),
+    #     hlink(title="Г±Г±Г»Г«ГЄГҐ", url="http://t.me/danya_support_bot"),
     # )
 
     await message.answer(
@@ -418,15 +418,15 @@ async def first_but(message: types.Message):
     ]
     keyboard = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        input_field_placeholder="Подтвердите заказ",
+        input_field_placeholder="ГЏГ®Г¤ГІГўГҐГ°Г¤ГЁГІГҐ Г§Г ГЄГ Г§",
     )
     keyboard.add(*buttons)
 
     msg = text(
-        hbold("Ваш заказ:"),
-        f'{hitalic("Продукт:")} {confirm_dict[user_key]["product"]}',
-        f'{hitalic("Адрес:")} {confirm_dict[user_key]["location"]}',
-        f'{hitalic("Тип:")} {confirm_dict[user_key]["type"]}\n',
+        hbold("Г‚Г Гё Г§Г ГЄГ Г§:"),
+        f'{hitalic("ГЏГ°Г®Г¤ГіГЄГІ:")} {confirm_dict[user_key]["product"]}',
+        f'{hitalic("ГЂГ¤Г°ГҐГ±:")} {confirm_dict[user_key]["location"]}',
+        f'{hitalic("Г’ГЁГЇ:")} {confirm_dict[user_key]["type"]}\n',
         commands["buying"]["leads_to"]["1 product"]["leads_to"]["1 location"][
             "leads_to"
         ]["1 type"]["msg_after_clicking"],
@@ -473,7 +473,7 @@ async def first_but(message: types.Message):
     ]
     keyboard = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        input_field_placeholder="Выберите способ оплаты",
+        input_field_placeholder="Г‚Г»ГЎГҐГ°ГЁГІГҐ Г±ГЇГ®Г±Г®ГЎ Г®ГЇГ«Г ГІГ»",
         one_time_keyboard=True,
     )
     keyboard.add(*buttons)
@@ -514,7 +514,7 @@ async def first_but(message: types.Message):
     ]
     keyboard = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        input_field_placeholder="Выберите действие",
+        input_field_placeholder="Г‚Г»ГЎГҐГ°ГЁГІГҐ Г¤ГҐГ©Г±ГІГўГЁГҐ",
     )
     keyboard.add(*start_buttons)
 
@@ -556,9 +556,9 @@ async def first_but(message: types.Message):
 )
 async def first_but(message: types.Message):
     msg = text(
-        "Для оплаты переходите в наш",
+        "Г„Г«Гї Г®ГЇГ«Г ГІГ» ГЇГҐГ°ГҐГµГ®Г¤ГЁГІГҐ Гў Г­Г Гё",
         hlink(
-            title="чат-бот сопровождения",
+            title="Г·Г ГІ-ГЎГ®ГІ Г±Г®ГЇГ°Г®ГўГ®Г¦Г¤ГҐГ­ГЁГї",
             url="http://t.me/danya_support_bot",
         ),
     )
@@ -571,7 +571,7 @@ async def first_but(message: types.Message):
 # back to menu
 @dp.message_handler(
     Text(equals=commands["menu"]["button_text"])
-)  #! сделать много возвратов в меню equals=список
+)  #! Г±Г¤ГҐГ«Г ГІГј Г¬Г­Г®ГЈГ® ГўГ®Г§ГўГ°Г ГІГ®Гў Гў Г¬ГҐГ­Гѕ equals=Г±ГЇГЁГ±Г®ГЄ
 async def first_but(message: types.Message):
     start_buttons = [
         commands["about us"]["button_text"],
@@ -597,7 +597,7 @@ async def send_photo(message: types.Message):
     photo_bytes = InputFile(path_or_bytesio=rf"{my_path}\picture_1.jpg")
 
     await dp.bot.send_photo(
-        chat_id=chat_id, photo=photo_bytes, caption=text(emojize("Держи! :fire:"))
+        chat_id=chat_id, photo=photo_bytes, caption=text(emojize("Г„ГҐГ°Г¦ГЁ! :fire:"))
     )
     await save_info(message)
 
@@ -615,7 +615,7 @@ async def send_album(message: types.Message):
     # one caption for whole album
     our_album.attach_photo(
         photo=photo_bytes_1,
-        caption=text(emojize("Какие они... :broken_heart:")),
+        caption=text(emojize("ГЉГ ГЄГЁГҐ Г®Г­ГЁ... :broken_heart:")),
     )
     our_album.attach_photo(photo=photo_bytes_2)
 
@@ -634,11 +634,11 @@ async def start_mailing(message: types.Message):
             await bot.send_message(user, message.text[message.text.find(" ") + 1 :])
             # write: "/mailing <text>". Space is necessary!
         await message.answer(
-            "Милорд, рассылка прошла успешно"
+            "ГЊГЁГ«Г®Г°Г¤, Г°Г Г±Г±Г»Г«ГЄГ  ГЇГ°Г®ГёГ«Г  ГіГ±ГЇГҐГёГ­Г®"
         )
         await save_info(message)
     else:  # block not-admins and save info
-        await message.answer(f'Команда "{message.text}" не найдена')
+        await message.answer(f'ГЉГ®Г¬Г Г­Г¤Г  "{message.text}" Г­ГҐ Г­Г Г©Г¤ГҐГ­Г ')
         await save_info(message)
 
 
@@ -656,12 +656,12 @@ async def start_mailing(message: types.Message):
         await bot.send_message(id, text_to_send)
         # write: "/personal <user_id> <text>". Spaces are necessary!
         await message.answer(
-            f'Вы отправили сообщение "{text_to_send}" пользователю {id}'
+            f'Г‚Г» Г®ГІГЇГ°Г ГўГЁГ«ГЁ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ "{text_to_send}" ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гѕ {id}'
         )
         await save_info(message)
 
     else:  # block not-admins and save info
-        await message.answer(f'Команда "{message.text}" не найдена')
+        await message.answer(f'ГЉГ®Г¬Г Г­Г¤Г  "{message.text}" Г­ГҐ Г­Г Г©Г¤ГҐГ­Г ')
         await save_info(message)
 
 
@@ -671,7 +671,7 @@ async def start_mailing(message: types.Message):
 @dp.message_handler()
 async def command_error(message: types.Message):
 
-    await message.answer(f'Команда "{message.text}" не найдена')
+    await message.answer(f'ГЉГ®Г¬Г Г­Г¤Г  "{message.text}" Г­ГҐ Г­Г Г©Г¤ГҐГ­Г ')
     await save_info(message)
 
 
@@ -729,7 +729,7 @@ async def save_file(message: types.Message):
 @dp.message_handler(content_types=[types.ContentType.VOICE])
 async def save_photo(message: types.Message):
     await message.answer(
-        "Оператор не может прослушать ваше сообщение. Напишите, пожалуйста, текстом"
+        "ГЋГЇГҐГ°Г ГІГ®Г° Г­ГҐ Г¬Г®Г¦ГҐГІ ГЇГ°Г®Г±Г«ГіГёГ ГІГј ГўГ ГёГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ. ГЌГ ГЇГЁГёГЁГІГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , ГІГҐГЄГ±ГІГ®Г¬"
     )
 
 
@@ -739,7 +739,7 @@ async def save_photo(message: types.Message):
 @dp.message_handler(content_types=[types.ContentType.VIDEO])
 async def save_photo(message: types.Message):
     await message.answer(
-        "Оператор не может посмотреть ваше видео. Пришлите, пожалуйста, фото"
+        "ГЋГЇГҐГ°Г ГІГ®Г° Г­ГҐ Г¬Г®Г¦ГҐГІ ГЇГ®Г±Г¬Г®ГІГ°ГҐГІГј ГўГ ГёГҐ ГўГЁГ¤ГҐГ®. ГЏГ°ГЁГёГ«ГЁГІГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , ГґГ®ГІГ®"
     )
 
 
@@ -749,34 +749,14 @@ async def save_photo(message: types.Message):
 @dp.message_handler(content_types=[types.ContentType.STICKER])
 async def save_photo(message: types.Message):
     await message.answer(
-        "Бот плохо воспринимает информацию через стикеры. Напишите, пожалуйста, текстом"
+        "ГЃГ®ГІ ГЇГ«Г®ГµГ® ГўГ®Г±ГЇГ°ГЁГ­ГЁГ¬Г ГҐГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г·ГҐГ°ГҐГ§ Г±ГІГЁГЄГҐГ°Г». ГЌГ ГЇГЁГёГЁГІГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , ГІГҐГЄГ±ГІГ®Г¬"
     )
 
 
 # ============================================================
 
-print("Бот запущен")  # output in console
+print("Bot is running")  # output in console
 
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
-
-
-# * 1. оставить кнопки такими или сделать их под сообщением - оставить так -- ГОТОВО
-# * 2. норм ли такой формат записи json -- норм
-# * 3. админ должен писать челику напрямую через тг -- ГОТОВО
-# * норм ли, если отдельно в файл csv будут выводиться сообщения от чела? (с пометкой имени от кого) -- ГОТОВО
-# * 4. надо ли просматривать фото, присланную челом? -- можно! -- ГОТОВО
-# * 5. должен ли бот слать фото? -- нет, но написать код который -- ГОТОВО (и для альбомов тоже)
-
-# * 1. отдельно вести txt файл с id людей для рассылки -- ГОТОВО
-# TODO 2. функция для рассылки должна считывать условие из другого .py файла (если там сообщение alarm,
-# TODO то пользователям отправляется смс)
-# 3. глянуть есть ли норм интерфейсы для админов (чтобы писать не через консоль) - мб через help_desk
-# 4. глянуть опыт самоката
-# * 5. добить дерево
-# 6. подумать про бот поддержки
-# * 7. генерировать в конце сообщение для пользователя с введенной инфой
-# * 8. сделать параметр в конфиг (true в старом файле, false в новом)
-# TODO 9. везде добавить кнопку в главное меню
-# ! к выходным закончить
